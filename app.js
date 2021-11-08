@@ -14,6 +14,8 @@ var usersRouter = require('./routes/users');
 
 dotenv.config();
 
+const port = process.env.PORT || 3000;
+
 // Configure Passport to use Auth0
 var strategy = new Auth0Strategy(
   {
