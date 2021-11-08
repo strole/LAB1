@@ -1,0 +1,20 @@
+extends layout
+
+block scripts 
+  script(src='../scripts/scripts.js')
+
+block content
+  
+  p(style='font-size: large;')
+    | Hello      
+    div#name #{user.displayName} 
+
+  p
+    | Your latitude is: 
+    a#lat
+  p
+    | Your longtitude is: 
+    a#lon
+  #map
+
+
