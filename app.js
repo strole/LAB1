@@ -55,7 +55,7 @@ app.use(cookieParser());
 
 // config express-session
 var sess = {
-  secret: 'ckdsclksdmfdsklfndsjkldsklfmsdfklsdnklfsdklm',
+  secret: AUTH0_CLIENT_SECRET,
   cookie: {},
   resave: false,
   saveUninitialized: true
